@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NienteDiInternazionale</string>
+    <string name="nada">Niente</string>
+    <string name="menssage">Inserisci un messaggio</string>
+</resources>

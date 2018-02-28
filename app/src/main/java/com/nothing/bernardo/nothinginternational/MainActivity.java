@@ -5,16 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.app.Activity;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.Toast;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -35,28 +25,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 TextView mainNothing = (TextView)findViewById(R.id.changeNothing);
-                mainNothing.setText("Nada");
+                mainNothing.setText(R.string.nada);
             }
         });
         imgButtonIt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TextView mainNothing = (TextView)findViewById(R.id.changeNothing);
-                mainNothing.setText("Niente");
+                mainNothing.setText(R.string.nada);
             }
         });
         imgButtonEs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TextView mainNothing = (TextView)findViewById(R.id.changeNothing);
-                mainNothing.setText("Nada");
+                mainNothing.setText(R.string.nada);
             }
         });
         imgButtonUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TextView mainNothing = (TextView)findViewById(R.id.changeNothing);
-                mainNothing.setText("Nothing");
+                mainNothing.setText(R.string.nada);
             }
         });
     }
