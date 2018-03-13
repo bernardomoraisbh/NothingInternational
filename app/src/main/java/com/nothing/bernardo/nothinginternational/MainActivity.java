@@ -76,10 +76,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, formattedDateOnStart);
         setContentView(R.layout.activity_main);
         TextView datez = findViewById(R.id.date);
-        TextView dates = findViewById(R.id.date2);
         startTime = System.currentTimeMillis();
         datez.setText(formattedDateOnStart);
-        dates.setText(fim);
     }
     /* (non-Javadoc)
     * @see android.app.Activity#onPause()
@@ -97,5 +95,15 @@ public class MainActivity extends AppCompatActivity {
         TextView dates = findViewById(R.id.date2);
         fim = "Voltou! Uma breve pausa de: " + seconds;
         dates.setText(fim);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setContentView(R.layout.activity_main);
+        TextView dates = findViewById(R.id.date2);
+        dates.setText(fim);
+        TextView datez = findViewById(R.id.date);
+        datez.setText(formattedDateOnStart);
     }
 }
